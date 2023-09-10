@@ -1,0 +1,12 @@
+<form [formGroup]="formRegistration" (ngSubmit)="submitForm()" class="formGroup">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Введите логин</label>
+      <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите логин" formControlName="login">
+    </div>
+    <div class="form-group">
+      <label for="password">Пароль</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль" formControlName="password">
+    </div>
+    <div *ngIf="formRegistration.invalid && formRegistration.touched" style="color: brown">Минимальная длина пароля 5 цифр</div>
+    <button type="submit" class="btn btn-primary" [disabled]="formRegistration.invalid" type="submit" (click)="saveData()">Зарегистрироваться</button>
+  </form>

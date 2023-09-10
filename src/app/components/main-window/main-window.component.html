@@ -1,0 +1,28 @@
+<!-- <div class="cardCust">
+
+  <div class="card" style="width: 18rem;" *ngFor="let post of postsList">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+          <h5 class="card-title">{{post.userId}}</h5>
+        <h5 class="card-title">{{post.id}}</h5>
+        <p class="card-text">{{post.title}}</p>
+        <a href="#" class="btn btn-primary">{{post.body}}</a>
+      </div>
+  </div>
+</div>
+ -->
+<input type="text" class="form-control" placeholder="Поиск по ID">
+<div class="container my-5 " >
+  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 cardLine1">
+    <div class="col " *ngFor="let post of postsList">
+      <div class="card ">
+          <img src="https://img.freepik.com/premium-vector/angular-js-minimal-flat-logo-design_582637-692.jpg" [routerLink]="['/post', post.id]"  class="card-img-top cardHover" alt="Картинка"/>
+          <div class="card-body">
+            <p class="card-title p1" >UserID: {{post.userId}}</p>
+            <p class="p2">PostId: {{post.id}}</p>
+            <p class="p3">PostTitle: {{post.title}}</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+  .cardLine1 {
+      /* display: flex;
+      flex-wrap: wrap; */
+      display: grid;
+      grid-template-areas: "1 2 3 4" "5 6 7 8";
+      align-items: center;
+      margin-left: -8%;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .col {
+    margin-left: 80px;
+    margin-top: 20px;
+  }
+
+  .card {
+    width: 270px;
+    height: 320px;
+  }
+
+  .form-control {
+    margin-top: 50px;
+    width: 50%;
+    margin-left: 25%;
+  }
+  
+
+  .cardHover {
+    cursor: pointer;
+  }
+  
+  p {
+    border-radius: 15px;
+  }
+
+  .p1 {
+    background-color: rgb(181, 184, 184);
+  }
+
+  .p2 {
+    background-color: rgb(137, 139, 139);
+  }
+
+  .p3 {
+    background-color: rgb(118, 119, 119);
+  }

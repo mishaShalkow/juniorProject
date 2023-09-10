@@ -1,0 +1,15 @@
+<form class="formGroup" [formGroup]="autorizationForm" (ngSubmit)="log()">
+  <div class="form-group">
+    <label for="login">Введите логин</label>
+    <input type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите логин" formControlName="login">
+  </div>
+  <div class="form-group">
+    <label for="password">Пароль</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль" formControlName="password">
+  </div>
+  <div class="btn_autorization">
+    <button type="submit" class="btn btn-primary">Войти</button>
+    <button type="submit" class="btn btn-secondary" (click)="routerRegistrPage()">Зарегистрироваться</button>
+  </div>
+</form>
+  
